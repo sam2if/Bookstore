@@ -57,11 +57,6 @@
 ### Home page
 
 
-## 🚀 Live Demo and video <a name="live-demo"></a>
-https://amazinggracee.github.io/Bookstore/
-
-- [Click Here]()
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -120,11 +115,11 @@ To get the output of our project make sure you have google Chrome, Mozila or any
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Amarachi Dimkpa**
+👤 **SAMUEL LEMMA**
 
-- GitHub: [@amazinggacee](https://github.com/Amazinggracee)
-- Twitter: [@amazinggaceu](https://twitter.com/amazinggraceu)
-- LinkedIn: [Amarachi Dimkpa](https://linkedin.com/in/amarachi-dimkpa-070643183)
+- GitHub: [samuel_lemma](https://github.com/sam2if)
+- Twitter: [samuel_lemma](https://twitter.com/samuellemma3733)
+- LinkedIn: [samuel_lemma](https://www.linkedin.com/in/samuel-lemma-7479b1214/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
