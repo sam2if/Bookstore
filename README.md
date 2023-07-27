@@ -95,7 +95,7 @@ For tracking linter errors locally you need to follow these steps:
 - Basic knowledge of Git and Github
 - Basic knowledge of Webpack
 - Basic knowledge of Jest
-- Basic knowledge of APIs
+
 
 To get the output of our project make sure you have google Chrome, Mozila or any other browser installed.
 
