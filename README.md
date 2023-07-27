@@ -31,6 +31,7 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 - React
+- Redux
 - JavaScript
 - CSS
 - JSX
