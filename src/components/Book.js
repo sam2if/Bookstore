@@ -1,55 +1,50 @@
-import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { deleteBooks } from '../redux/features/books/booksSlice';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/booksSlice';
+import Button from './Button';
 
-const Book = ({
+function Book({
   id, title, author, category,
-}) => {
+}) {
   const dispatch = useDispatch();
-
   return (
-    <section className="bookContainer">
-      <div className="details">
-        <h4>{category}</h4>
+    <div className="card-container">
+      <div className="book">
+        <p className="category">{category}</p>
         <h3>{title}</h3>
-        <p>{author}</p>
-        <ul className="comments">
-          <li>
-            <button type="button">Comments</button>
-          </li>
-          <li>
-            <button type="button" onClick={() => dispatch(deleteBooks(id))}>
-              Remove
-            </button>
-          </li>
-          <li>
-            <button type="button">Edit</button>
-          </li>
-        </ul>
-      </div>
-
-      <div className="progress">
-        <div className="spinner">
-          <div className="spinnerIcon" />
-          <div className="spinnerText">
-            <p className="percentage">40%</p>
-            <p className="completed">completed</p>
-          </div>
-        </div>
-
-        <div className="borderLine" />
-
-        <div className="chapter">
-          <p className="currentChapter">Current Chapter</p>
-          <p className="chapterNo">Chapter 8</p>
-          <button className="updateButton" type="button">
-            Update Progress
-          </button>
+        <p className="author">{author}</p>
+        <div className="buttons">
+          <Button btnName="comments-btn" btnValue="comments" />
+          <div className="separate" />
+          <Button
+            type="button"
+            onClick={() => dispatch(removeBook(id))}
+            btnValue="Remove"
+            btnName="remove"
+          />
+          <div className="separate" />
+          <Button btnName="edit-btn" btnValue="Edit" />
         </div>
       </div>
-    </section>
+      <div className="progress-sec">
+        <div className="oval" />
+        <div className="percentages">
+          <h2>66%</h2>
+          <p>Completed</p>
+        </div>
+      </div>
+      <div className="update-container">
+        <div className="line" />
+        <div className="column-chapter">
+          <h5>CURRENT CHAPTER</h5>
+          <p>Chapter 17</p>
+          <Button btnName="update-btn" btnValue="UPDATE PROGRESS" />
+        </div>
+      </div>
+    </div>
   );
-};
+}
 
 export default Book;
 

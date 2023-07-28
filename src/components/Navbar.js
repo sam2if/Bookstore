@@ -1,45 +1,43 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { FaUser } from 'react-icons/fa';
 
-const Navbar = () => {
-  const navigation = useNavigate();
-
-  const handleBookPage = () => {
-    navigation('/');
-  };
-
-  const handleCategoriesPage = () => {
-    navigation('/categories');
-  };
-
+function Navbar() {
   return (
-    <nav className="navContainer">
-      <div className="links">
-        <h2 className="logo">Bookstore CMS</h2>
-        <ul className="navLinks">
-          <li>
-            <button type="button" onClick={handleBookPage} className="books">
-              Books
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              onClick={handleCategoriesPage}
-              className="categories"
-            >
-              Categories
-            </button>
-          </li>
+    <header>
+      <nav className="navigation">
+        <h1>Bookstore CMS</h1>
+        <ul className="nav-list">
+          <CustomLink className="books" to="/">BOOKS</CustomLink>
+          <CustomLink className="category" to="/Categories">CATEGORIES</CustomLink>
         </ul>
+      </nav>
+      <div className="profile-pic">
+        <FaUser className="user-nav" />
       </div>
-      <div className="userCircle">
-        <FontAwesomeIcon icon={faUser} className="user" />
-      </div>
-    </nav>
+    </header>
   );
+}
+
+function CustomLink({
+  to, children, className,
+}) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  return (
+    <li className={`${isActive ? 'active' : ''} ${className}`}>
+      <Link to={to}>
+        {children}
+      </Link>
+    </li>
+  );
+}
+
+CustomLink.propTypes = {
+  to: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 export default Navbar;
