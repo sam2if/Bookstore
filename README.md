@@ -84,6 +84,10 @@ You can install this repositiory using:
   npm install
 ```
 ### Usage
+- Basic knowledge of HTML, CSS, and Javascript
+- Basic knowledge of Git and Github
+- Basic knowledge of Webpack
+- Basic knowledge of Jest
 
 ```Usage
 To run the project, open the index.html file in your web browser.
