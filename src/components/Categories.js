@@ -1,4 +1,7 @@
-const Categories = () => (
-  <h1>All categories</h1>
-);
+function Categories() {
+  return (
+    <div />
+  );
+}
+
 export default Categories;

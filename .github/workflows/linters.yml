@@ -6,7 +6,6 @@ env:
   FORCE_COLOR: 1
 
 jobs:
-  
   stylelint:
     name: Stylelint
     runs-on: ubuntu-22.04

@@ -1,14 +1,25 @@
- <a name="readme-top">Bookstore</a>
+
+<a name="readme-top"></a>
+
+<div align="center">
+   
+  <br/>
+
+  <h3><b>AwesomeBooks</b></h3>
+
+</div>
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-- [📖 Learning objectives](#objectives)
   - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
@@ -21,100 +32,79 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Bookstore] <a name="about-project"></a>
-
-**[Bookstore]** This is a simple book store app built with React js. It uses the Google Books API to search for books and display them. It also uses react-router to navigate between pages.
-## Learning objectives <a name="objectives"></a>
-
-- Use React Router.
-- Use React components.
-
+# 📖Awesome Books <a name="about-project"></a>
+This is a react project that allows you to create a list of books and view them on a web page. The project uses modern ES6 syntax .
 ## 🛠 Built With <a name="built-with"></a>
-- React
-- Redux
-- JavaScript
-- CSS
-- JSX
-- Jest
+<ul>
+  <li>HTML5</li> 
+  <li>CSS3</li>
+  <li>Reactt</li>
+  <li>Redux Toolkit </li>
+  <li>API</li>
+</ul>
 
-  
-<!-- Features -->
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>client </summary>
+  <ul>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+  </ul>
+</details>
 
 ### Key Features <a name="key-features"></a>
 
--[ ] Create React App
--[ ] reusable components: /components.
--[ ] Setup your router inside of <App>
--[ ] Add 2 routes in your application, each should render a page component:
-- /
-- /categories
--[ ] Contains individual book state, as well as a button to delete the book
--[ ] Contains a list to renders individual books
--[ ] Contains a form to create new books
--[ ] Contains a navigation to link to the 2 routes you created
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Implemented a new layout technique to better optimize the website for desktop screens.
+- Improved the typography and spacing of the website to enhance its visual appeal.
+- I Used react to manipulate DOM elements.
+- I Used react events.
+- I used reducers and actions
+- - I used API
+# 💻 Getting Started <a name="getting-started"></a>
 
-<!-- LIVE DEMO AND THE DEPLOY -->
-### Home page
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-To get a local copy up and running follow these simple example steps.
-
-Clone the project unto your local machine
-Open the project with your code editor
-Run npm install to install all the dependencies
-Run npm start to start the server
-Open http://localhost:3000 to view it in the browser.
-
-## Test
-
-For tracking linter errors locally you need to follow these steps:
-
-- After cloning the project you need to run this command
-  > npm install
-   `This command will download all the dependencies of the project`
-
-- For tracking the linter errors in HTML file run:
-  > npx hint .
-
-- For tracking the linter errors in CSS file run:
-  > npx stylelint "**/*.{css,scss}"
-
-  - And For tracking the linter errors in JavaScript file run:
-  > npx eslint .
+To get a local copy of the project up and running, follow these steps.
 
 ### Prerequisites
 
+```Prerequisites
+In order to run this project, you need to have a web browser installed on your computer.
+```
+### Setup
+
+Clone this repository to your desired folder by running the following command:
+
+```Setup
+  - git clone  https://github.com/sam2if/Bookstore
+  ```
+ ### Install
+
+You can install this repositiory using:
+```install
+  npm install
+```
+### Usage
 - Basic knowledge of HTML, CSS, and Javascript
 - Basic knowledge of Git and Github
 - Basic knowledge of Webpack
 - Basic knowledge of Jest
 
+```Usage
+To run the project, open the index.html file in your web browser.
+```
+### Run tests
 
-To get the output of our project make sure you have google Chrome, Mozila or any other browser installed.
+To run tests, run the following command:
 
-### Install 
-
-> In order to install this project please go through the following steps:
-
-- Clone the repository
-- Run `npm install`
-- Run `npm start` to start the server
-- Run `npm run build` to build the project
-- Run `npm run test` to run the tests
+```tests
+ npx stylelint "**/*.{css,scss}"
+ npx eslint "**/*.{js,jsx}"
+ npm start
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
-
 ## 👥 Authors <a name="authors"></a>
-
 
 👤 **SAMUEL LEMMA**
 
@@ -122,56 +112,36 @@ To get the output of our project make sure you have google Chrome, Mozila or any
 - Twitter: [samuel_lemma](https://twitter.com/samuellemma3733)
 - LinkedIn: [samuel_lemma](https://www.linkedin.com/in/samuel-lemma-7479b1214/)
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
 ## 🔭 Future Features <a name="future-features"></a>
 
-### Key Features <a name="key-features"></a>
-
-
-
+- [ ] **Animation**
+- [ ] **Responsive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
+## 🙏  Acknowledgements <a name="acknowledgements"></a>  
+
+Thanks to team , I have followed these requirements 
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Amazinggracee/Bookstore/issues).
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+If If you like this project, please give it a star on GitHub.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-- Hat tip to [Microvers](www.microverse.org)  and all the staff
-- Thanks to My coding Partners 
-- Thanks to My Morning-session-group and Standup-team Partners and
-- Thanks to Code Reviewers
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p
 
+ development
